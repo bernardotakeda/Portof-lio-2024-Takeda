@@ -167,4 +167,12 @@ header .brk-contato button:hover {
     width: 60%;
     text-align: justify;
 }
-
+.natureza6{
+    border: 0.2svi solid white;
+    border-color: white;
+    border-radius: 1vh;
+    margin-top: -19%;
+    margin-left: -5%;
+    display: flex;
+    
+}
