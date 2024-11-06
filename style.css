@@ -154,25 +154,3 @@ header .brk-contato button:hover {
     font-size: 2svi;
     margin-top: 10%;
 }   
-.natureza5{
-    border: 0.2svi solid white;
-    border-color: white;
-    border-radius: 1vh;
-    margin-top: -2%;
-    margin-left: -2%;
-}
-.txtNatureza{
-    margin-top: -10%;
-    margin-left: 22%;
-    width: 60%;
-    text-align: justify;
-}
-.natureza6{
-    border: 0.2svi solid white;
-    border-color: white;
-    border-radius: 1vh;
-    margin-top: -19%;
-    margin-left: -5%;
-    display: flex;
-    
-}

@@ -1,5 +1,17 @@
-@import url(style.css);
+/* Estilo Geral */
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
 
+body {
+    background-color: black;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Estilo para o botão do dropdown */
 .paste-button {
     position: relative;
     display: block;
@@ -8,7 +20,7 @@
 
 .button {
     background-color: #283D27;
-    color: #ff0000;
+    color: white;
     margin-top: 5px;
     font-size: 15px;
     font-weight: bold;
@@ -40,12 +52,12 @@
 
 .dropdown-content a:hover {
     background-color: #000000;
-    color: #ffffff; /* Alterado para branco */
+    color: #ffffff;
 }
 
 .dropdown-content a:focus {
     background-color: #212121;
-    color: #ffffff; /* Alterado para branco */
+    color: #ffffff;
 }
 
 .dropdown-content #top:hover {
@@ -64,22 +76,15 @@
     display: block;
 }
 
+/* Estilos de navegação */
 .nav-link {
     font-family: Helvetica;
-    color: white; /* Alterado para branco */
+    color: white;
 }
 
 .container-fluid {
     background-color: #283D27;
     height: 100px;
-}
-
-.button {
-    color: #ffffff; /* Alterado para branco */
-}
-
-.button:hover {
-    color: #fff;
 }
 
 .nav-link_active {
@@ -93,8 +98,9 @@
     cursor: pointer;
 }
 
+/* Estilo do Cabeçalho */
 header {
-    padding: 40px 4%;
+    padding: 40px 4%; 
 }
 
 header > .interface {
@@ -104,10 +110,10 @@ header > .interface {
 }
 
 header a {
-    color: #ffffff; /* Alterado para branco */
     text-decoration: none;
     display: inline-block;
     transition: .2s;
+    color: white; /* Alterado para branco */
 }
 
 header a:hover {
@@ -129,9 +135,9 @@ header .brk-contato button {
     font-size: 18px;
     font-weight: 600;
     background-color: #283D27;
-    color: #ffffff; /* Alterado para branco */
-    border: 0;
+    color: #5c5c5c;
     border-radius: 30px;
+    border: 0;
     cursor: pointer;
 }
 
@@ -139,6 +145,8 @@ header .brk-contato button:hover {
     box-shadow: 0px 0px 8px #386e36;
     color: #fff;
 }
+
+/* Custom button style */
 .custom-button {
     display: flex;
     flex-direction: column;
@@ -151,64 +159,132 @@ header .brk-contato button:hover {
     margin-top: 30%;
     margin-left: 25%;
     width: fit-content;
+}
+
+.custom-button:hover {
     text-decoration: none;
 }
-.custom-button:hover{
-    text-decoration: none;
-}
-.custom-button:visited{
+
+.custom-button:visited {
     text-decoration: none;
     color: white;
 }
+
+/* Texto de boas-vindas */
 .welcome-text {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    margin-top: 50px; /* Espaço entre o cabeçalho e o texto */
-}
-.welcome-text {
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    margin-top: 50px; /* Espaço entre o cabeçalho e o texto */
+    margin-top: 50px;
     color: #fff;
 }
+
+/* Estilo para os textos de trabalhos */
 .meus-trabalhos {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    margin-top: 30vh; /* Espaço entre o cabeçalho e o texto */
+    margin-top: 30vh;
     color: #fff;
     font-size: 6vh;
 }
+
+/* Estilo para os textos dos cards de trabalho */
 .txtCro {
- justify-content:center ;
+    width: 70%;
+    justify-content: center;
+    color: white;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 1%;
+    font-size: 1rem;
 }
 
+.txtNatureza {
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+/* Navbar secundária */
 .secondary-navbar {
     background-color: #000000ab;
     padding: 10px 0;
-  }
-  
-  .secondary-navbar ul {
+}
+
+.secondary-navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center;
-  }
-  
-  .secondary-navbar li {
+}
+
+.secondary-navbar li {
     display: inline;
     margin: 0 10px;
-  }
-  
-  .secondary-navbar a {
+}
+
+.secondary-navbar a {
     text-decoration: none;
     color: #ffffff;
     padding: 8px 16px;
-  }
-  
-  .secondary-navbar a:hover,
-  .secondary-navbar a.active {
+}
+
+.secondary-navbar a:hover,
+.secondary-navbar a.active {
     background-color: #283D27;
     border-radius: 4px;
     font-weight: bold;
     color: #ffffff;
-  }   
+}
+
+/* Estilo das imagens de trabalho (exibição responsiva) */
+img.croacia-img {
+    width: 300px;
+    height: auto;
+    display: block;
+}
+
+.croacia-img{
+    border: 0.2svi solid white;
+    border-color: white;
+    border-radius: 1vh;
+}
+
+.card-atividade{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    header > .interface {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .custom-button {
+        margin-top: 15%;
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .meus-trabalhos {
+        font-size: 4vh;
+    }
+
+    .txtCro, .txtNatureza {
+        font-size: 1rem;
+    }
+}
